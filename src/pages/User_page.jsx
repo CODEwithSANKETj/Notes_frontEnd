@@ -22,7 +22,7 @@ function User_page() {
         console.log(err);
       });
 
-  }, [flag]);
+  }, [flag,token]);
 
   function handleDelete(id) {
     fetch(`https://clever-frog-earmuffs.cyclic.cloud/notes/delete/${id}`, {
