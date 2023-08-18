@@ -19,7 +19,7 @@ import { FaUserAlt, FaLock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const CFaUserAlt = chakra(FaUserAlt);
-const CFaLock = chakra(FaLock);
+const CFaLock = chakra(FaLock)
 
 const Login = ({onLogin,onLogout}) => {
   const token = localStorage.getItem('token') || '';

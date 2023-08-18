@@ -1,4 +1,4 @@
-import { Box, Button, Center, Container, Flex, Spacer } from "@chakra-ui/react";
+import { Box, Button, Container, Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Edit from "./Edit";
 
@@ -22,7 +22,7 @@ function User_page() {
         console.log(err);
       });
 
-  }, [flag,token]);
+  }, [flag]);
 
   function handleDelete(id) {
     fetch(`https://clever-frog-earmuffs.cyclic.cloud/notes/delete/${id}`, {
